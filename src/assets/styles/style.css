@@ -10,7 +10,11 @@ body {
     margin: 16px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 23px;
+}
+
+body a {
+    text-decoration: none;
 }
 
 header {
@@ -58,11 +62,12 @@ header nav ul li a {
 
 main {
     display: flex;
+    position: relative;
+    height: 100%;
 }
 
 main .left-column, .right-column {
     width: 50%;
-    height: 100%;
 }
 
 main .right-column img {
@@ -81,6 +86,12 @@ footer {
     color: #000;
     opacity: 0.3;
 
+}
+
+main .footer-down {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* ---------------ГЛАВНАЯ СТРАНИЦА-------------------- */
@@ -164,7 +175,26 @@ main .right-column .image-item .image-info {
     bottom: -50px
 
 }
-main .footer-jewelry{
-    margin-top:905px;
+
+main .footer-jewelry {
+    margin-top: 905px;
+}
+
+/* ---------------КАБИНЕТНАЯ ПЛАСТИКА------------------- */
+main .footer-cabinet-objects {
+    margin-top: 905px;
+}
+
+/* --------------КОНТАКТЫ------------------ */
+
+
+main .contacts-content {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 150px;
+}
+
+main .contacts-content li a {
+    /*color:#000;*/
 }
 
