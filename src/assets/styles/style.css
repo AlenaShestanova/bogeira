@@ -116,8 +116,6 @@ main .about-content .about-info {
 }
 
 main .achievements-list {
-    color: #000;
-    opacity: 0.5;
     list-style-type: none;
     padding: 0;
     margin-top: 64px;
@@ -130,13 +128,19 @@ main .achievements-list li:nth-child(2) {
 
 main .achievements-list li {
     cursor: pointer;
+    color:var(--main-text-color)
 }
 
+main .achievements-list .achievements-list-item-content {
+    display: none;
+    color: #000;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    width: 80%;
+}
 
-main .left-column .footer-about-page {
-    /*height: 100%;*/
-    /*align-items: flex-end;*/
-    /*justify-content: space-between;*/
+main .achievements-list .active{
+    display: block;
 
 }
 
