@@ -7,7 +7,10 @@
 body {
     font-family: Pragmatica;
     --main-text-color: #808080;
-    margin: 16px
+    margin: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 header {
@@ -53,29 +56,79 @@ header nav ul li a {
     line-height: 19px;
 }
 
-
-
-main{
+main {
     display: flex;
 }
-main footer, .img-container{
+
+main .left-column, .right-column {
     width: 50%;
+    height: 100%;
 }
 
-main .img-container img{
+main .right-column img {
     width: 100%;
-    max-height: 661px;
+
 }
-main .img-container img:not(:last-child){
+
+main .right-column img:not(:last-child) {
     margin-bottom: 10px;
 }
 
 footer {
     display: flex;
     justify-content: space-between;
-    width: 50%;
     padding-right: 32px;
-    color:#000;
+    color: #000;
     opacity: 0.3;
-    margin: auto;
+
 }
+
+/* ---------------ГЛАВНАЯ СТРАНИЦА-------------------- */
+
+main .left-column .footer-main-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+}
+
+/* ---------------ОБО МНЕ-------------------- */
+main .left-column-about-content {
+    margin-top: 150px;
+}
+
+main .left-column-about-content .about-info {
+    margin-bottom: 64px;
+    margin-top: 26px
+}
+
+main .achievements-list {
+    color: #000;
+    opacity: 0.5;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 64px;
+}
+
+main .achievements-list li:nth-child(2) {
+    margin-bottom: 32px;
+}
+
+
+main .achievements-list li {
+    cursor: pointer;
+}
+
+main .left-column-about-content .about-info {
+    width: 80%;
+}
+
+main .left-column .footer-about-page {
+    /*height: 100%;*/
+    /*align-items: flex-end;*/
+    /*justify-content: space-between;*/
+
+}
+
+
