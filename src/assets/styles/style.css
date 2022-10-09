@@ -94,13 +94,14 @@ main .left-column .footer-main-page {
 }
 
 /* ---------------ОБО МНЕ-------------------- */
-main .left-column-about-content {
+main .about-content {
     margin-top: 150px;
 }
 
-main .left-column-about-content .about-info {
+main .about-content .about-info {
     margin-bottom: 64px;
-    margin-top: 26px
+    margin-top: 26px;
+    width: 80%;
 }
 
 main .achievements-list {
@@ -120,9 +121,7 @@ main .achievements-list li {
     cursor: pointer;
 }
 
-main .left-column-about-content .about-info {
-    width: 80%;
-}
+
 
 main .left-column .footer-about-page {
     /*height: 100%;*/
@@ -131,4 +130,17 @@ main .left-column .footer-about-page {
 
 }
 
+/* ---------------ТАЧ БАЙ ТАЧ-------------------- */
+
+main .touch-by-touch-content {
+    margin-top: 300px;
+    margin-bottom: 235px;
+}
+
+main .touch-by-touch-content .touch-by-touch-about {
+    margin-top: 26px;
+    margin-bottom: 64px;
+    width: 70%;
+    padding: 0
+}
 
