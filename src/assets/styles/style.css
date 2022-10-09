@@ -122,7 +122,6 @@ main .achievements-list li {
 }
 
 
-
 main .left-column .footer-about-page {
     /*height: 100%;*/
     /*align-items: flex-end;*/
@@ -142,5 +141,30 @@ main .touch-by-touch-content .touch-by-touch-about {
     margin-bottom: 64px;
     width: 70%;
     padding: 0
+}
+
+/* ---------------ЮВЕЛИРНЫЕ ИЗДЕЛИЯ-------------------- */
+
+main .right-column .image-item {
+    position: relative;
+    height: 100%;
+}
+
+main .right-column .image-item img {
+    margin: 0
+}
+
+main .right-column .image-item .image-info {
+    position: absolute;
+    color: #000000;
+    opacity: 0.5;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    margin-left: -80px;
+    bottom: -50px
+
+}
+main .footer-jewelry{
+    margin-top:905px;
 }
 
