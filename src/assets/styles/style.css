@@ -125,10 +125,9 @@ main .achievements-list li:nth-child(2) {
     margin-bottom: 32px;
 }
 
-
-main .achievements-list li {
-    cursor: pointer;
-    color:var(--main-text-color)
+main .achievements-list li a {
+    text-decoration: none;
+    color: var(--main-text-color)
 }
 
 main .achievements-list .achievements-list-item-content {
@@ -139,10 +138,59 @@ main .achievements-list .achievements-list-item-content {
     width: 80%;
 }
 
-main .achievements-list .active{
+main .achievements-list .active {
     display: block;
 
 }
+
+
+/*-----ПОДРАЗДЕЛЫ СТРАНИЦЫ ОБО МНЕ---*/
+.about-item-page {
+    display: block;
+}
+
+.about-item-page .heading {
+    margin-bottom: 20px;
+}
+
+.about-item-page .heading a {
+    margin-right: 10px;
+}
+
+main .sub-about-page-images-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+
+.sub-about-page-images-container .image-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 32%;
+    position: relative;
+}
+
+.sub-about-page-images-container .image-container span {
+    /*position: absolute;*/
+    left: 0;
+    transform-origin: bottom left;
+}
+
+.sub-about-page-images-container img {
+    overflow: hidden;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.about-item-page-footer {
+    padding: 0;
+    margin-top: 32px;
+}
+
 
 /* ---------------ТАЧ БАЙ ТАЧ-------------------- */
 
