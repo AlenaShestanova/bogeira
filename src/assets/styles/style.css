@@ -151,6 +151,8 @@ main .achievements-list .active {
 
 .about-item-page .heading {
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .about-item-page .heading a {
@@ -158,39 +160,34 @@ main .achievements-list .active {
 }
 
 main .sub-about-page-images-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    position: relative;
-
+    margin-bottom: 32px;
 }
 
-
-.sub-about-page-images-container .image-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 32%;
-    position: relative;
-}
-
-.sub-about-page-images-container .image-container span {
-    /*position: absolute;*/
-    left: 0;
-    transform-origin: bottom left;
+.sub-about-page-images-container .subscription:not(:last-child){
+    margin-bottom: 20px;
 }
 
 .sub-about-page-images-container img {
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 100%;
+}
+
+
+.sub-about-page-images-container .images-grid {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    align-items: flex-end;
+    grid-column-gap: 20px;
+}
+
+.sub-about-page-images-container .subscription {
+    align-items: flex-start;
 }
 
 .about-item-page-footer {
     padding: 0;
-    margin-top: 32px;
 }
-
 
 /* ---------------ТАЧ БАЙ ТАЧ-------------------- */
 
