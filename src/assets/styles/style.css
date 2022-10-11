@@ -94,6 +94,17 @@ main .footer-down {
     justify-content: space-between;
 }
 
+/* ---------------СТАРТОВАЯ СТРАНИЦА-------------------- */
+
+.start-logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: none
+}
+
 /* ---------------ГЛАВНАЯ СТРАНИЦА-------------------- */
 
 main .left-column .footer-main-page {
@@ -123,6 +134,11 @@ main .achievements-list {
 
 main .achievements-list li:nth-child(2) {
     margin-bottom: 32px;
+}
+
+main .achievements-list li {
+    cursor: pointer;
+    color: var(--main-text-color)
 }
 
 main .achievements-list li a {
@@ -163,7 +179,7 @@ main .sub-about-page-images-container {
     margin-bottom: 32px;
 }
 
-.sub-about-page-images-container .subscription:not(:last-child){
+.sub-about-page-images-container .subscription:not(:last-child) {
     margin-bottom: 20px;
 }
 
@@ -244,6 +260,12 @@ main .contacts-content {
 }
 
 main .contacts-content li a {
-    /*color:#000;*/
+    color: #000;
+    text-decoration: underline;
+}
+
+main .contacts-content .change-color-link{
+    color:var(--main-text-color)
+
 }
 
