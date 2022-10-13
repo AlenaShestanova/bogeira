@@ -88,10 +88,18 @@ footer {
 
 }
 
+.mobile-footer {
+    display: none;
+}
+
 main .footer-down {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+#mobile-header {
+    display: none;
 }
 
 /* ---------------СТАРТОВАЯ СТРАНИЦА-------------------- */
@@ -114,6 +122,7 @@ main .left-column .footer-main-page {
     height: 100%;
 
 }
+
 
 /* ---------------ОБО МНЕ-------------------- */
 main .about-content {
@@ -163,6 +172,9 @@ main .achievements-list .active {
 /*-----ПОДРАЗДЕЛЫ СТРАНИЦЫ ОБО МНЕ---*/
 .about-item-page {
     display: block;
+}
+.sub-about-page-images-mobile-container{
+    display: none;
 }
 
 .about-item-page .heading {
@@ -264,8 +276,188 @@ main .contacts-content li a {
     text-decoration: underline;
 }
 
-main .contacts-content .change-color-link{
-    color:var(--main-text-color)
+main .contacts-content .change-color-link {
+    color: var(--main-text-color)
 
 }
 
+@media screen and (max-width: 620px) {
+
+}
+/*------------ АДАПТИВ---------------*/
+
+@media screen and (max-width: 1585px) {
+    header ul li:not(.lang-change){
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 19px;
+        color: #000;
+    }
+
+    header {
+        display: none;
+    }
+
+    #mobile-header {
+        display: block;
+        color: #000;
+    }
+
+    .mobile-logo .logo img {
+        max-width: 95px;
+        max-height: 16px;
+    }
+
+    .mobile-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .mobile-logo .lang-change a {
+        color: #000;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li a {
+        color: #000;
+        font-size: 13px;
+    }
+
+    header nav ul li {
+        padding-bottom: 3px;
+        margin-right: 0 !important;
+    }
+
+    header nav li:first-child {
+        margin-bottom: 24px;
+    }
+
+
+    header nav li:last-child {
+        margin-top: 48px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main footer {
+        display: none;
+    }
+
+    main .left-column {
+        width: 100%;
+    }
+
+    main .right-column {
+        width: 100%;
+        order: -1;
+    }
+
+    footer {
+        padding: 0;
+        margin: 32px 0 16px 0;
+    }
+
+
+    .mobile-footer {
+        display: flex;
+    }
+
+    /*-------- ОБО МНЕ-----------*/
+    .about-info {
+        width: 100% !important
+    }
+
+    .about-content {
+        margin-top: 32px !important;
+    }
+
+    .achievements-list li {
+        color: #000000 !important;
+    }
+
+    .achievements-list li a {
+        color: #000000 !important;
+    }
+
+    .achievements-list-item-content {
+        width: 100%;
+    }
+
+    /*-----------------ТАЧ БАЙ ТАЧ--------------*/
+    .touch-by-touch-content {
+        order: -1;
+        margin: 0 !important;
+    }
+
+    .touch-by-touch-about {
+        width: 100% !important
+    }
+
+    #touch-by-touch .left-column {
+        order: -1;
+        margin-bottom: 64px;
+    }
+
+    /*-----------КАБИНЕТНАЯ ПЛАСТИКА И ЮВЕЛИРНЫЕ ИЗДЕЛИЯ-----------*/
+    main .right-column .image-item .image-info {
+        position: relative;
+        color: #000000;
+        opacity: 1;
+        transform: none;
+        /*transform-origin:none*/
+        margin: 0 !important;
+        transform-origin: left bottom;
+        bottom: 0;
+
+    }
+    main .right-column .image-item:not(:last-child){
+        margin-bottom: 32px;
+    }
+
+    /*----------КОНТАКТЫ-----------*/
+    #contacts .left-column {
+        order: -1;
+    }
+
+    .contacts-content {
+        margin-top: 0 !important;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-width: 620px) {
+    /* ------------ОБО МНЕ ПОДСТРАНИЦЫ----------*/
+
+    .about-item-page{
+
+    }
+    .sub-about-page-images-container{
+        display: none;
+    }
+    .sub-about-page-images-mobile-container img{
+        max-width: 100%;
+    }
+    .sub-about-page-images-mobile-container{
+        display: block;
+    }
+
+    .sub-about-page-images-mobile-container span:not(:last-child){
+        margin-bottom:32px ;
+        display: block;
+    }
+}
