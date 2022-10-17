@@ -308,10 +308,18 @@ main .contacts-content .change-color-link {
         display: block;
         color: #000;
     }
+    .mobile-logo .nav-icons{
+        display: flex;
+        align-items: center;
+    }
 
-    .mobile-logo .logo img {
+    .mobile-logo .logo .logo-img {
         max-width: 95px;
         max-height: 16px;
+    }
+
+    .mobile-logo .icon-back{
+        margin-right: 16px;
     }
 
     .mobile-logo {
