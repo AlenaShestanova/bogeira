@@ -9,8 +9,8 @@ body {
     --main-text-color: #808080;
     margin: 16px;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 14px;
+    line-height: 19px;
 }
 
 body a {
@@ -21,12 +21,6 @@ header {
     display: flex;
 }
 
-header nav {
-    color: var(--main-text-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-}
 
 header .logo, nav {
     width: 50%;
@@ -53,11 +47,8 @@ header ul .lang-change {
 }
 
 header nav ul li a {
-    text-decoration: none;
     color: var(--main-text-color);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
 }
 
 main {
@@ -85,8 +76,13 @@ footer {
     padding-right: 32px;
     color: #000;
     opacity: 0.3;
-
+    position: fixed;
+    width: calc(50% - 32px);;
+    /*max-width: calc(50% - 32px);*/
+    /*min-width: calc(50% - 32px);*/
+    bottom: 16px;
 }
+
 
 .mobile-footer {
     display: none;
@@ -115,14 +111,22 @@ main .footer-down {
 
 /* ---------------ГЛАВНАЯ СТРАНИЦА-------------------- */
 
-main .left-column .footer-main-page {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
+/*main .left-column .footer-main-page {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    height: 100%;*/
 
+/*}*/
+main .left-column {
+    position: relative;
 }
 
+main .right-column-main img {
+    width: 100%;
+    max-height: 440px;
+    object-fit: cover;
+}
 
 /* ---------------ОБО МНЕ-------------------- */
 main .about-content {
@@ -139,6 +143,7 @@ main .achievements-list {
     list-style-type: none;
     padding: 0;
     margin-top: 64px;
+    padding-bottom: 10px;
 }
 
 main .achievements-list li:nth-child(2) {
@@ -168,12 +173,19 @@ main .achievements-list .active {
 
 }
 
+main .right-column .ira-photo {
+    width: 100%;
+    object-fit: cover;
+    height: calc(100vh - 87px);
+}
+
 
 /*-----ПОДРАЗДЕЛЫ СТРАНИЦЫ ОБО МНЕ---*/
 .about-item-page {
     display: block;
 }
-.sub-about-page-images-mobile-container{
+
+.sub-about-page-images-mobile-container {
     display: none;
 }
 
@@ -235,7 +247,6 @@ main .touch-by-touch-content .touch-by-touch-about {
 
 main .right-column .image-item {
     position: relative;
-    height: 100%;
 }
 
 main .right-column .image-item img {
@@ -253,9 +264,9 @@ main .right-column .image-item .image-info {
 
 }
 
-main .footer-jewelry {
-    margin-top: 905px;
-}
+/*main .footer-jewelry {*/
+/*    margin-top: 905px;*/
+/*}*/
 
 /* ---------------КАБИНЕТНАЯ ПЛАСТИКА------------------- */
 main .footer-cabinet-objects {
@@ -281,13 +292,20 @@ main .contacts-content .change-color-link {
 
 }
 
+main .right-column .contacts-photo {
+    width: 100%;
+    object-fit: cover;
+    max-height: calc(100vh - 90px);
+}
+
 @media screen and (max-width: 620px) {
 
 }
+
 /*------------ АДАПТИВ---------------*/
 
 @media screen and (max-width: 1585px) {
-    header ul li:not(.lang-change){
+    header ul li:not(.lang-change) {
         margin-right: 10px;
     }
 }
@@ -300,6 +318,7 @@ main .contacts-content .change-color-link {
         color: #000;
     }
 
+
     header {
         display: none;
     }
@@ -308,7 +327,8 @@ main .contacts-content .change-color-link {
         display: block;
         color: #000;
     }
-    .mobile-logo .nav-icons{
+
+    .mobile-logo .nav-icons {
         display: flex;
         align-items: center;
     }
@@ -318,7 +338,7 @@ main .contacts-content .change-color-link {
         max-height: 16px;
     }
 
-    .mobile-logo .icon-back{
+    .mobile-logo .icon-back {
         margin-right: 16px;
     }
 
@@ -377,6 +397,8 @@ main .contacts-content .change-color-link {
     footer {
         padding: 0;
         margin: 32px 0 16px 0;
+        position: relative!important;
+        width: 100%!important;
     }
 
 
@@ -432,7 +454,8 @@ main .contacts-content .change-color-link {
         bottom: 0;
 
     }
-    main .right-column .image-item:not(:last-child){
+
+    main .right-column .image-item:not(:last-child) {
         margin-bottom: 32px;
     }
 
@@ -450,22 +473,24 @@ main .contacts-content .change-color-link {
 
 @media screen and (max-width: 620px) {
     /* ------------ОБО МНЕ ПОДСТРАНИЦЫ----------*/
-
-    .about-item-page{
+    .about-item-page {
 
     }
-    .sub-about-page-images-container{
+
+    .sub-about-page-images-container {
         display: none;
     }
-    .sub-about-page-images-mobile-container img{
+
+    .sub-about-page-images-mobile-container img {
         max-width: 100%;
     }
-    .sub-about-page-images-mobile-container{
+
+    .sub-about-page-images-mobile-container {
         display: block;
     }
 
-    .sub-about-page-images-mobile-container span:not(:last-child){
-        margin-bottom:32px ;
+    .sub-about-page-images-mobile-container span:not(:last-child) {
+        margin-bottom: 32px;
         display: block;
     }
 }
