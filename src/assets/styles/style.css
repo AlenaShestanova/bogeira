@@ -226,7 +226,8 @@ main .sub-about-page-images-container {
 }
 
 .about-item-page-footer {
-    padding: 0;
+    /*padding: 0;*/
+    width: calc(100% - 38px);
 }
 
 /* ---------------ТАЧ БАЙ ТАЧ-------------------- */
