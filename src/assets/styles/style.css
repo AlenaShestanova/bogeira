@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Pragmatica;
+    font-family: Pragmatica, serif;
     --main-text-color: #808080;
     margin: 16px;
     font-weight: 400;
@@ -245,29 +245,44 @@ main .touch-by-touch-content .touch-by-touch-about {
 }
 
 /* ---------------ЮВЕЛИРНЫЕ ИЗДЕЛИЯ-------------------- */
+.row-content{
+    display: block;
+}
+main .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    color: var(--main-text-color)
+}
 
-main .right-column .image-item {
+main .row .empty-cell {
+    width: 50%;
+    height: 100%;
+}
+
+main .row .image-item {
+    width: 50%;
     position: relative;
 }
 
-main .right-column .image-item img {
-    margin: 0
+main .row .image-item img {
+    margin: 0;
 }
 
-main .right-column .image-item .image-info {
-    position: absolute;
+main .row:hover {
     color: #000000;
-    opacity: 0.5;
+}
+
+main .row .image-item .image-info {
+    position: absolute;
     transform: rotate(-90deg);
     transform-origin: top left;
     margin-left: -80px;
-    bottom: -50px
-
+    bottom: -50px;
 }
 
-/*main .footer-jewelry {*/
-/*    margin-top: 905px;*/
-/*}*/
 
 /* ---------------КАБИНЕТНАЯ ПЛАСТИКА------------------- */
 main .footer-cabinet-objects {
@@ -398,8 +413,8 @@ main .right-column .contacts-photo {
     footer {
         padding: 0;
         margin: 32px 0 16px 0;
-        position: relative!important;
-        width: 100%!important;
+        position: relative !important;
+        width: 100% !important;
     }
 
 
