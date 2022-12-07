@@ -1,7 +1,11 @@
 @font-face {
     font-family: 'Pragmatica';
     font-style: normal;
-    src: url('../fonts/pragmatica.ttf');
+    font-weight: 400;
+    src: url('../fonts/Pragmatica-Light.ttf') format('truetype'),
+    url('../fonts/Pragmatica-LightOblique.woff2') format('woff2'),
+    url('../fonts/Pragmatica-Light.woff') format('woff'),
+    url('../fonts/Pragmatica-Light.eot') format('eot')
 }
 
 body {
@@ -245,9 +249,10 @@ main .touch-by-touch-content .touch-by-touch-about {
 }
 
 /* ---------------ЮВЕЛИРНЫЕ ИЗДЕЛИЯ-------------------- */
-.row-content{
+.row-content {
     display: block;
 }
+
 main .row {
     display: flex;
     align-items: center;
