@@ -10,83 +10,90 @@
     <title>Bogeira</title>
 </head>
 <body>
-<header>
-    <a class="logo" href="index.html">
-        <img src="assets/images/logo.svg" alt="bogeira-logo">
-    </a>
-    <nav>
-        <ul>
-            <li>
-                <a href="pages/eng/about.html">about</a>
-            </li>
-            <li>
-                <a href="pages/eng/touch-by-touch.html">touch by touch</a>
-            </li>
-            <li>
-                <a href="pages/eng/jewelry.html">jewelry pieces</a>
-            </li>
-            <li>
-                <a href="pages/eng/cabinet-objects.html">the cabinet objects</a>
-            </li>
-            <li>
-                <a href="pages/eng/contacts.html">contacts</a>
-            </li>
-            <li class="lang-change">
+<img id="logo-primary-btn" class="start-logo-container" src="assets/images/logo-icon.svg" alt="logo-icon"
+     onclick="handleLogoClick()">
+<div id="main-container">
+    <header>
+        <a class="logo" href="index.html">
+            <img id="icon-in-logo" class="logo-icon" src="assets/images/logo-icon.svg" alt="bogeira-logo">
+            <img class="bogeira" src="assets/images/bogeira.svg" alt="bogeira-logo">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="pages/eng/about.html">about</a>
+                </li>
+                <li>
+                    <a href="pages/eng/touch-by-touch.html">touch by touch</a>
+                </li>
+                <li>
+                    <a href="pages/eng/jewelry.html">jewelry pieces</a>
+                </li>
+                <li>
+                    <a href="pages/eng/cabinet-objects.html">the cabinet objects</a>
+                </li>
+                <li>
+                    <a href="pages/eng/contacts.html">contacts</a>
+                </li>
+                <li class="lang-change">
+                    <a href="index.html">РУС</a> /
+                    <a href="">EN</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <header id="mobile-header">
+        <div class="mobile-logo">
+            <div class="nav-icons">
+                <a class="logo" href="eng-main.html">
+                    <img class='logo-img' src="assets/images/logo.svg" alt="bogeira-logo">
+                </a>
+            </div>
+            <div class="lang-change">
                 <a href="index.html">РУС</a> /
                 <a href="">EN</a>
-            </li>
-        </ul>
-    </nav>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="pages/eng/about.html">about</a>
+                </li>
+                <li>
+                    <a href="pages/eng/touch-by-touch.html">touch by touch</a>
+                </li>
+                <li>
+                    <a href="pages/eng/jewelry.html">jewelry pieces</a>
+                </li>
+                <li>
+                    <a href="pages/eng/cabinet-objects.html">the cabinet objects</a>
+                </li>
+                <li>
+                    <a href="pages/eng/contacts.html">contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="left-column">
+            <footer>
+                <span>Irina Bogolyubova, 2022</span>
+                <span>bogeira.art@gmail.com</span>
+            </footer>
+        </div>
+        <div class="right-column">
+            <img src="assets/images/main/image1.svg" alt="ring">
+            <img src="assets/images/main/image2.svg" alt="ring">
+            <img src="assets/images/main/image3.svg" alt="jewelry photo">
+        </div>
+    </main>
 
-</header>
-<header id="mobile-header">
-    <div class="mobile-logo">
-        <div class="nav-icons">
-            <a class="logo" href="eng-main.html">
-                <img class='logo-img' src="assets/images/logo.svg" alt="bogeira-logo">
-            </a>
-        </div>
-        <div class="lang-change">
-            <a href="index.html">РУС</a> /
-            <a href="">EN</a>
-        </div>
-    </div>
-    <nav>
-        <ul>
-            <li>
-                <a href="pages/eng/about.html">about</a>
-            </li>
-            <li>
-                <a href="pages/eng/touch-by-touch.html">touch by touch</a>
-            </li>
-            <li>
-                <a href="pages/eng/jewelry.html">jewelry pieces</a>
-            </li>
-            <li>
-                <a href="pages/eng/cabinet-objects.html">the cabinet objects</a>
-            </li>
-            <li>
-                <a href="pages/eng/contacts.html">contacts</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <div class="left-column">
-        <footer >
-            <span>Irina Bogolyubova, 2022</span>
-            <span>bogeira.art@gmail.com</span>
-        </footer>
-    </div>
-    <div class="right-column">
-        <img src="assets/images/main/image1.svg" alt="ring">
-        <img src="assets/images/main/image2.svg" alt="ring">
-        <img src="assets/images/main/image3.svg" alt="jewelry photo">
-    </div>
-</main>
-<footer class="mobile-footer">
-    <span>Irina Bogolyubova, 2022</span>
-    <span>bogeira.art@gmail.com</span>
-</footer>
+    <footer class="mobile-footer">
+        <span>Irina Bogolyubova, 2022</span>
+        <span>bogeira.art@gmail.com</span>
+    </footer>
+</div>
 </body>
+<script src="assets/scripts/script.js"></script>
 </html>

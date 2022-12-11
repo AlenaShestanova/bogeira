@@ -10,84 +10,90 @@
     <title>Bogeira</title>
 </head>
 <body>
-<header>
-    <a class="logo" href="index.html">
-        <img src="assets/images/logo.svg" alt="bogeira-logo">
-    </a>
-    <nav>
-        <ul>
-            <li>
-                <a href="pages/ru/about.html"> обо мне</a>
-            </li>
-            <li>
-                <a href="pages/ru/touch-by-touch.html">тач бай тач</a>
-            </li>
-            <li>
-                <a href="pages/ru/jewelry.html">ювелирные изделия</a>
-            </li>
-            <li>
-                <a href="pages/ru/cabinet-objects.html">кабинетная пластика</a>
-            </li>
-            <li>
-                <a href="pages/ru/contacts.html">контакты</a>
-            </li>
-            <li class="lang-change">
+<img id="logo-primary-btn" class="start-logo-container" src="assets/images/logo-icon.svg" alt="logo-icon"
+     onclick="handleLogoClick()">
+<div id="main-container">
+    <header>
+        <a class="logo" href="index.html">
+            <img id="icon-in-logo" class="logo-icon" src="assets/images/logo-icon.svg" alt="bogeira-logo">
+            <img  class="bogeira" src="assets/images/bogeira.svg" alt="bogeira-logo">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="pages/ru/about.html"> обо мне</a>
+                </li>
+                <li>
+                    <a href="pages/ru/touch-by-touch.html">тач бай тач</a>
+                </li>
+                <li>
+                    <a href="pages/ru/jewelry.html">ювелирные изделия</a>
+                </li>
+                <li>
+                    <a href="pages/ru/cabinet-objects.html">кабинетная пластика</a>
+                </li>
+                <li>
+                    <a href="pages/ru/contacts.html">контакты</a>
+                </li>
+                <li class="lang-change">
+                    <a href="">РУС</a> /
+                    <a href="eng-main.html">EN</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <header id="mobile-header">
+        <div class="mobile-logo">
+            <div class="nav-icons">
+                <a class="logo" href="index.html">
+                    <img class='logo-img' src="assets/images/logo.svg" alt="bogeira-logo">
+                </a>
+            </div>
+            <div class="lang-change">
                 <a href="">РУС</a> /
                 <a href="eng-main.html">EN</a>
-            </li>
-        </ul>
-    </nav>
-
-</header>
-<header id="mobile-header">
-    <div class="mobile-logo">
-        <div class="nav-icons">
-            <a class="logo" href="index.html">
-                <img class='logo-img' src="assets/images/logo.svg" alt="bogeira-logo">
-            </a>
+            </div>
         </div>
-        <div class="lang-change">
-            <a href="">РУС</a> /
-            <a href="eng-main.html">EN</a>
-        </div>
-    </div>
-    <nav>
-        <ul>
-            <li>
-                <a href="pages/ru/about.html"> обо мне</a>
-            </li>
-            <li>
-                <a href="pages/ru/touch-by-touch.html">тач бай тач</a>
-            </li>
-            <li>
-                <a href="pages/ru/jewelry.html">ювелирные изделия</a>
-            </li>
-            <li>
-                <a href="pages/ru/cabinet-objects.html">кабинетная пластика</a>
-            </li>
-            <li>
-                <a href="pages/ru/contacts.html">контакты</a>
-            </li>
+        <nav>
+            <ul>
+                <li>
+                    <a href="pages/ru/about.html"> обо мне</a>
+                </li>
+                <li>
+                    <a href="pages/ru/touch-by-touch.html">тач бай тач</a>
+                </li>
+                <li>
+                    <a href="pages/ru/jewelry.html">ювелирные изделия</a>
+                </li>
+                <li>
+                    <a href="pages/ru/cabinet-objects.html">кабинетная пластика</a>
+                </li>
+                <li>
+                    <a href="pages/ru/contacts.html">контакты</a>
+                </li>
 
-        </ul>
-    </nav>
-</header>
-<main>
-    <div class="left-column">
-        <footer>
-            <span>Ирина Боголюбова, 2022</span>
-            <span>bogeira.art@gmail.com</span>
-        </footer>
-    </div>
-    <div class="right-column right-column-main" >
-        <img src="assets/images/main/image1.svg" alt="тач бай тач">
-        <img src="assets/images/main/image2.svg" alt="ювелирное изделие">
-        <img src="assets/images/main/image3.svg" alt="фото">
-    </div>
-</main>
-<footer class="mobile-footer">
-    <span>Ирина Боголюбова, 2022</span>
-    <span>bogeira.art@gmail.com</span>
-</footer>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="left-column">
+            <footer>
+                <span>Ирина Боголюбова, 2022</span>
+                <span>bogeira.art@gmail.com</span>
+            </footer>
+        </div>
+        <div class="right-column right-column-main">
+            <img src="assets/images/main/image1.svg" alt="тач бай тач">
+            <img src="assets/images/main/image2.svg" alt="ювелирное изделие">
+            <img src="assets/images/main/image3.svg" alt="фото">
+        </div>
+    </main>
+    <footer class="mobile-footer">
+        <span>Ирина Боголюбова, 2022</span>
+        <span>bogeira.art@gmail.com</span>
+    </footer>
+</div>
 </body>
+<script src="assets/scripts/script.js"></script>
 </html>

@@ -30,10 +30,20 @@ header .logo, nav {
     width: 50%;
 }
 
-header .logo img {
-    width: 202px;
+#icon-in-logo {
+    visibility: hidden;
     height: 34px;
+    margin-right: 10px;
 }
+
+header .logo {
+    max-height: 34px;
+}
+
+header .logo .bogeira {
+    height: 25px;
+}
+
 
 header ul {
     display: flex;
@@ -114,6 +124,77 @@ main .footer-down {
 }
 
 /* ---------------ГЛАВНАЯ СТРАНИЦА-------------------- */
+#main-container {
+    display: none;
+}
+
+
+.main-container-active {
+    display: block !important;
+    position: relative;
+    animation-name: opacity-animation;
+    transition: all 0.5s ease-out;
+    animation-duration: 2.5s, 5s;
+
+}
+
+@keyframes opacity-animation {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+#logo-primary-btn:hover {
+    cursor: pointer;
+}
+
+
+.logo-animation {
+    animation-name: logo-move;
+    transition: all 0.5s ease-out;
+    animation-duration: 1.5s, 5s;
+}
+
+.logo-hidden {
+    display: none;
+}
+
+@keyframes logo-move {
+    from {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    50% {
+        width: 44px;
+        height: 44px;
+
+    }
+
+    75% {
+        width: 34px;
+        height: 34px;
+    }
+
+    to {
+        top: 16px;
+        left: 16px;
+        transform: translate(-3%, -3%);
+        width: 34px;
+        height: 34px;
+
+    }
+
+
+}
+
 
 /*main .left-column .footer-main-page {*/
 /*    display: flex;*/
@@ -136,6 +217,7 @@ main .right-column-main img {
 main .about-content {
     margin-top: 150px;
 }
+
 
 main .about-content .about-info {
     margin-bottom: 64px;
@@ -179,8 +261,8 @@ main .achievements-list .active {
 
 main .right-column .ira-photo {
     width: 100%;
-    object-fit: cover;
-    height: calc(100vh - 87px);
+    /*object-fit: cover;*/
+    /*height: calc(100vh - 87px);*/
 }
 
 
@@ -250,7 +332,7 @@ main .touch-by-touch-content .touch-by-touch-about {
 
 /* ---------------ЮВЕЛИРНЫЕ ИЗДЕЛИЯ-------------------- */
 .row-content {
-    display: block;
+    display: block !important;
 }
 
 main .row {
@@ -274,6 +356,7 @@ main .row .image-item {
 
 main .row .image-item img {
     margin: 0;
+    width: 100%;
 }
 
 main .row:hover {
